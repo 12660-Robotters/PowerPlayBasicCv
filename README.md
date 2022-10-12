@@ -19,7 +19,7 @@ Paste into the Teamcode Folder and Follow Usage
 
 First, create an Op Mode, and add this line to the top of the class file
 
-    private PowerPlayBasicCv cvClass = new PowerPlayEasyCv();
+    private PowerplayBasicCv cvClass = new PowerplayBasicCv();
 
 Where you run your code add this line before the waitforstart command, making sure to pass your hardware map as a paramater. 
 
@@ -30,3 +30,6 @@ Finally Use
     int parkingspot = cvClass.pullcv();
 
 then use parkingspot in your code. 
+
+
+## A sample OpMode is provided
