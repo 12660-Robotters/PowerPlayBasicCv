@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.PowerPlayBasicCv;
 
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
@@ -67,13 +67,13 @@ public class PowerplayBasicCv {
         // Change this to Vuforia License Key
         parameters.vuforiaLicenseKey = VUFORIA_KEY;
         // Set Webcam Name to webcam in config or modify this variable
-        parameters.cameraName = hardwareMap.get(WebcamName.class, "webcam");
+        parameters.cameraName = hardwareMap.get(WebcamName.class, "cam1");
         vuforia =classFactory.createVuforia(parameters);
     }
 
 
     // Returns Parking Spot 1,2,3 or -1 if not detected
-    public int pullcv() {
+    public int pullCv() {
         List<Recognition> recognitionList = tfod.getUpdatedRecognitions();
         if(recognitionList != null) {
             for (Recognition rec : recognitionList) {
